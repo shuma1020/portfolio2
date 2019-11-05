@@ -1,0 +1,15 @@
+current directory: /Users/shuma40/Desktop/portfolio2/vendor/bundle/ruby/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+/Users/shuma40/.rbenv/versions/2.6.3/bin/ruby -I /Users/shuma40/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20191105-38747-1tg64d9.rb extconf.rb
+creating Makefile
+
+current directory: /Users/shuma40/Desktop/portfolio2/vendor/bundle/ruby/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/shuma40/Desktop/portfolio2/vendor/bundle/ruby/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/shuma40/Desktop/portfolio2/vendor/bundle/ruby/2.6.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20191105-38747-gvxz6u
