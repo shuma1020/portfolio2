@@ -14,16 +14,13 @@
   <% if user_signed_in? %> 
   <ul class="sidenav">
 	<li><a class="active" href="#home">しおり一覧</a></li>
-	<li><a href="#news">プロフィール作成</a></li>
-	<li><a href="#contact">しおり作成</a></li>
+	<li><%= link_to "プロフィール作成", new_user_path, class: "get" %></li>
+	<li><%= link_to "しおり作成", new_post_path, class: "get" %></li>
 	<li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
 </ul>
 <% else %>
 <ul class="sidenav">
-  <li><a class="active" href="#home">しおり一覧</a></li>
-	<li><a href="#news">プロフィール作成</a></li>
-	<li><a href="#contact">しおり作成</a></li>
-	<li><%= link_to "ログイン", new_user_session_path, class: 'post' %></li>
+	<li><%= link_to "ログイン", new_user_session_path, class: 'get' %></li>
   </ul>
   <% end %>
   </header>

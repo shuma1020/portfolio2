@@ -1,0 +1,9 @@
+<div class="container">
+
+<% @posts.each do |post| %>
+
+<%=link_to(post.name, "posts/#{post.id}") %>
+<%=post.depature_date%>
+<%=post.return_date%>
+<% end %>
+</div>
