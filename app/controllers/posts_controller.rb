@@ -25,8 +25,7 @@ class PostsController < ApplicationController
     end
 
     def edit 
-        
-        
+      @post = Post.find_by(id: params[:id])
     end
 
     def show 
@@ -34,5 +33,15 @@ class PostsController < ApplicationController
     end
 
     def update 
+        @post = Post.find_by(id: params[:id])
+        @post.name =params[:name]
+        @post.depature_date = params[:depature_date]
+        @post.depature_time = params[:depature_time]
+        @post.memo = params[:memo]
+        if @post.save
+          redirect_to edit_post_path
+        else
+          redirect_to edit_post_path
+        end
     end
 end

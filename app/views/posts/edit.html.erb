@@ -1,2 +1,20 @@
 <div class="container">
+<%=form_tag("/posts/#{@post.id}", method: :put) do%>
+<div class="form-style-6">
+
+<div class="top-heading">
+<input type="date" name="depature_date" value="<%=@post.depature_date %>">
+</div>
+<div class="main-form">
+<ul>
+<li><input type="text" name="name" value="<%=@post.name %>"></li>
+<li><input type="time" name="depature_time"></li>
+<li><textarea name="memo"></textarea></li>
+<input type="submit" value="作成">
+</ul>
+</div>
+
+<% end%>
+
+</div>
 </div>

@@ -3,10 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
     margin: 0;
+    
+}
+ul,li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .container{
-    padding-left:240px;
+    padding-top: 100px;
+    text-align: center;
 }
 
 ul.sidenav {
@@ -212,4 +219,12 @@ div.content {
   
   .profile-intro{
     font-size: 12px;
+  }
+  /*-スケジュール*/
+ 
+  .top-heading{
+      display: inline-block;
+      text-align: center;
+     
+
   }
