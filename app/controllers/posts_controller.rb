@@ -39,9 +39,13 @@ class PostsController < ApplicationController
         @post.depature_time = params[:depature_time]
         @post.memo = params[:memo]
         if @post.save
-          redirect_to edit_post_path
+          redirect_to("posts/#{@post.id}/book")
         else
           redirect_to edit_post_path
         end
     end
+    def book
+      @post = Post.find_by(id: params[:id])
+    end
+    
 end

@@ -1,15 +1,19 @@
 <div class="container">
-<%=form_tag("/posts/#{@post.id}", method: :put) do%>
+<%=form_tag("/posts/#{@post.id}/update") do%>
 <div class="form-style-6">
 
 <div class="top-heading">
+<h1>スケジュール新規作成</h1>
 <input type="date" name="depature_date" value="<%=@post.depature_date %>">
 </div>
 <div class="main-form">
 <ul>
-<li><input type="text" name="name" value="<%=@post.name %>"></li>
-<li><input type="time" name="depature_time"></li>
-<li><textarea name="memo"></textarea></li>
+<label for="schedule">予定</label>
+<li><input id="schedule" type="text" name="schedule" value="<%=@post.schedule %>"></li>
+<label for= "time">予定時刻</label>
+<li><input id="time" type="time" name="depature_time"></li>
+<label for= "extra">備考</label>
+<li><textarea id="extra" name="memo"></textarea></li>
 <input type="submit" value="作成">
 </ul>
 </div>
